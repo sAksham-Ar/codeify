@@ -15,4 +15,4 @@ language=hljs.highlightAuto(msg.content,["cpp","py","js","autohotkey","c","cs","
  }
  });
 
-client.login('Nzg1NjEzODM4NjQzODg4MTI5.X86Z5w.VuXrCtbAbns9IyGDHStDm0oD0o4');
+client.login('');
