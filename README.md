@@ -16,7 +16,6 @@ Languages supported:
 11. LaTEX
 12. Matlab
 13. PHP
-14. PowerShell
 15. Bash
 
 Note:Adding html makes the bot reply to normal text as well which is annoying.
