@@ -9,10 +9,10 @@ client.on('ready', () => {
 
 client.on('message', msg => {
     if (msg.author.bot) return;
-
- if(hljs.highlightAuto(msg.content,["cpp","py","js","autohotkey","c","cs","css","go","java","json","tex","matlab","php","ps","bash"]).language ){
- msg.reply("```"+hljs.highlightAuto(msg.content,["cpp","py","js","autohotkey","c","cs","css","go","java","json","tex","matlab","php","ps","bash"]).language+'\n'+msg.content+"```");
+language=hljs.highlightAuto(msg.content,["cpp","py","js","autohotkey","c","cs","css","go","java","json","tex","matlab","php","ps","bash"]).language;
+ if( language&&(!msg.content.startsWith(`${prefix}pls`))&&((!msg.content.startsWith(`${prefix}http`)))){
+ msg.reply("```"+language+'\n'+msg.content+"```");
  }
  });
 
-client.login('');
+client.login('Nzg1NjEzODM4NjQzODg4MTI5.X86Z5w.VuXrCtbAbns9IyGDHStDm0oD0o4');
