@@ -9,7 +9,7 @@ client.on('ready', () => {
 
 client.on('message', msg => {
     if (msg.author.bot) return;
-language=hljs.highlightAuto(msg.content,["cpp","py","js","autohotkey","c","cs","css","go","java","json","tex","matlab","php","bash"]).language;
+language=hljs.highlightAuto(msg.content.split(' ')[0],["cpp","py","js","autohotkey","c","cs","css","go","java","json","tex","matlab","php","bash"]).language;
  if( language&&(!msg.content.startsWith(`pls`))&&((!msg.content.startsWith(`http`)))&&(!msg.content.startsWith("```"))){
  msg.reply("```"+language+'\n'+msg.content+"```");
  }
